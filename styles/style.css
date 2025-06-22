@@ -9,26 +9,6 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
-@keyframes scale {
-  from {
-    scale: 1;
-  }
-  50% {
-    scale: 1.25;
-  }
-  to {
-    scale: 1;
-  }
-}
-
-@keyframes sparks-opasity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .page {
   min-inline-size: 320px;
@@ -56,7 +36,6 @@
 .header {
   margin: 0 auto;
   border: 2px solid var(--color);
-  block-size: clamp(20.4375rem, 19.5352rem + 3.8498vw, 23rem);
   margin-block-start: 100px;
   margin-block-end: 100px;
 }
@@ -168,6 +147,7 @@ figure img {
   justify-content: center;
   align-items: center;
   padding: 0;
+  transition: outline 0.3s ease;
 }
 
 .card__icon-button:hover {
@@ -242,13 +222,12 @@ figure img {
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--color);
-  transition: outline 0.3s ease;
 }
 
 .card__icon-button svg {
-  position: absolute;
-  block-size: 36px;
-  inline-size: 39px;
+  position: relative;
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 .button__style {
@@ -303,7 +282,7 @@ figure img {
 }
 
 .dialog {
-  margin: 0 autog;
+  margin: 0 auto;
   margin-block-end: 100px;
   display: flex;
   flex-direction: column;
