@@ -400,4 +400,8 @@ body:has(.inset-floppy[open]) {
   .footer button {
     flex-direction: column;
   }
+
+  .inset-floppy[open] {
+    max-block-size: 191px;
+  }
 }
