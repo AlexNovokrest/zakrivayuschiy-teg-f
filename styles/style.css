@@ -33,7 +33,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--inter), 'Inter', sans-serif;
+  font-family: var(--main-font), 'Inter', sans-serif;
   font-variation-settings: 'wght' var(--regular);
   background-color: var(--subcolor);
   background-image: var(--bgImage);
@@ -49,7 +49,7 @@
 
 @supports (font-variation-settings: normal) {
   .page {
-    font-family: var(--inter), 'Inter', sans-serif;
+    font-family: var(--main-font), 'Inter', sans-serif;
   }
 }
 
@@ -71,7 +71,7 @@
   flex-direction: column;
   padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem)
     clamp(0.875rem, -1.4687rem + 10vw, 7.5313rem);
-  font-family: var(--pressStart2P);
+  font-family: var(--accent-font);
   gap: 20px;
 }
 
@@ -98,7 +98,7 @@
   font-size: 18px;
 }
 
-.card h3 {
+.card h2 {
   border-block-end: 2px solid var(--color);
   font-variation-settings: 'wght' var(--bold);
   font-size: 18px;
@@ -124,7 +124,7 @@ figure img {
   inset-inline-end: 25px;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: var(--pressStart2P);
+  font-family: var(--accent-font);
   mix-blend-mode: hard-light;
   opacity: 50%;
   text-shadow:
@@ -260,7 +260,7 @@ figure img {
   gap: 8px;
   min-inline-size: 130px;
   min-block-size: 38px;
-  font-family: var(--pressStart2P);
+  font-family: var(--accent-font);
   font-size: 14px;
   border: 2px solid var(--color);
   background: var(--subcolor);
@@ -302,9 +302,8 @@ figure img {
   min-block-size: 55px;
 }
 
-.footer {
+.dialog {
   margin: 0 auto;
-  margin-block-start: 50px;
   margin-block-end: 100px;
   display: flex;
   flex-direction: column;
@@ -328,7 +327,7 @@ body:has(.inset-floppy[open]) {
   padding: 30px;
   row-gap: 30px;
   column-gap: 20px;
-  font-family: var(--pressStart2P);
+  font-family: var(--accent-font);
 }
 
 .inset-floppy[open] svg {
@@ -356,35 +355,35 @@ body:has(.inset-floppy[open]) {
   opacity: 0.75;
 }
 
-.img__1 {
+.filter-sepia {
   filter: sepia(60%);
 }
 
-.img__2 {
+.filter-grayscale {
   filter: grayscale(80%);
 }
 
-.img__3 {
+.filter-contrast {
   filter: contrast(200%);
 }
 
-.img__4 {
+.filter-hue {
   filter: hue-rotate(40deg);
 }
 
-.img__5 {
+.filter-saturate {
   filter: saturate(300%);
 }
 
-.img__6 {
+.filter-multy {
   filter: opacity(40%) grayscale(40%) sepia(50%);
 }
 
-.img__7 {
+.filter-blur {
   filter: blur(5px);
 }
 
-.img__8 {
+.filter-brightness {
   filter: brightness(130%);
 }
 
@@ -397,7 +396,7 @@ body:has(.inset-floppy[open]) {
     inset-inline-end: 13px;
   }
 
-  .footer button {
+  .dialog button {
     flex-direction: column;
   }
 
