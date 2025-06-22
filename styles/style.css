@@ -303,7 +303,7 @@ figure img {
 }
 
 .dialog {
-  margin: 0 auto;
+  margin: 0 autog;
   margin-block-end: 100px;
   display: flex;
   flex-direction: column;
