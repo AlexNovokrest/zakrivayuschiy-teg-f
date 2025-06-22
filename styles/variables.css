@@ -1,1 +1,16 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --inter: 'Inter-Variable';
+  --pressStart2P: 'PressStart2P';
+  --regular: 400;
+  --bold: 700;
+  --inlineSize: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  --color: #000;
+  --subcolor: #fff;
+  --animation-fill-color: red;
+  --bgImage:
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+}
